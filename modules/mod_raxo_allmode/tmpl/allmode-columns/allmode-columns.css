@@ -1,0 +1,200 @@
+/*
+ * ================================================================
+   RAXO All-mode PRO J2.5 - Template CSS
+ * ----------------------------------------------------------------
+ * @package		RAXO All-mode PRO
+ * @subpackage	All-mode Columns Template
+ * @copyright	Copyright (C) 2009-2012 RAXO Group
+ * @license		Copyrighted Commercial Software
+ * 				This file is forbidden for redistribution
+ * @link		http://raxo.org
+ * ================================================================
+ */
+
+
+/* ----- RESET Styles ----- */
+.allmode-columns .allmode_name, .allmode-columns .allmode_showall,
+.allmode-columns .allmode_topitem, .allmode-columns .allmode_item,
+.allmode-columns .allmode_title, .allmode-columns img {
+	margin: 0; padding: 0;
+	background: none; border: 0 none;
+}
+.allmode-columns .allmode_clear {
+	clear: both;
+}
+
+
+/* ----- MODULE BOX Styles ----- */
+.allmode-columns {
+	margin-bottom: 8px;
+/*	border-bottom: 4px solid #d5e6f7;*/
+}
+.allmode-columns .allmode_name {												/* Module Block NAME */
+	margin: 5px 0 0 0; padding: 0 10px 0 15px;
+	font-size: 13px; font-weight: bold;
+	text-transform: uppercase;
+	color: #0a4580;
+	border-bottom: 5px solid #d5e6f7;
+}
+.allmode-columns .allmode_name a {
+	font-weight: bold;
+	text-decoration: none;
+}
+.allmode-columns .allmode_showall {												/* "Show All" TEXT */
+	padding-right: 10px;
+	text-align: right !important;
+}
+
+
+/* ----- INFO FIELDS Styles ----- */
+.allmode-columns .allmode_category, .allmode-columns .allmode_hits,
+.allmode-columns .allmode_author, .allmode-columns .allmode_item .allmode_date {
+	padding: 0 10px 0 17px;
+	font-size: 11px;
+	color: #18324b;
+	background: url(icons.png) no-repeat 0 0;
+}
+.allmode-columns .allmode_category {background-position: 0 -200px;}
+.allmode-columns .allmode_hits {background-position: 0 -300px;}
+.allmode-columns .allmode_author {background-position: 0 -400px;}
+.allmode-columns .allmode_readmore {
+	float: right;
+	margin-right: 8px;
+	font-size: 11px; line-height: 15px;
+	text-align: right;
+}
+.allmode-columns .allmode_rating {												/* Item RATING */
+	white-space: nowrap;
+}
+	.allmode-columns .allmode_star {
+		display: inline-block;
+		margin: 0 1px;
+		width: 11px; height: 11px;
+		background: url(rating.png) no-repeat 0 0;
+		zoom: 1; *display: inline; /*IE7 Hack*/
+	}
+	.allmode-columns .allmode_star span {
+		display: inline-block;
+		width: 100%; height: 100%;
+		background: url(rating.png) no-repeat 0 -20px;
+	}
+
+
+/* ----- TOP ITEMS Styles ----- */
+.allmode-columns .allmode_topbox {												/* TOP Items Box */
+	margin: 0 0 0 -32px;														/* Remove unneccessary left margin of the first column (-32px) */
+	/*width: 576px;*/															/* TOP box width (32 + 256 + 32 + 256 = 576px) */
+	overflow: hidden;
+}
+.allmode-columns .allmode_topitem {												/* TOP Item DIV */
+	float: left;																/* Assign float property */
+	margin: 16px 0 0 32px;														/* TOP column spacing (32px) */
+	padding-bottom: 6px;
+	width: 256px;																/* TOP column width (256px) */
+	border-bottom: 3px solid #d5e6f7;
+}
+.allmode-columns .allmode_topitem .allmode_img img {							/* TOP Item IMAGE */
+	border: 5px solid #d5e6f7;
+		-moz-box-shadow: 0 0 3px #d6d6d6;
+		-webkit-box-shadow: 0 0 3px #d6d6d6;
+	box-shadow: 0 0 3px #d6d6d6;
+}
+.allmode-columns .allmode_topitem .allmode_title {								/* TOP Item TITLE */
+	margin: 10px 0 8px 0; padding: 0 4px;
+	font-size: 17px; font-weight: bold;
+	color: #0a4580;
+}
+.allmode-columns .allmode_topitem .allmode_title a {
+	font-weight: bold;
+}
+.allmode-columns .allmode_topitem .allmode_text {								/* TOP Item TEXT */
+	margin: 6px 4px 0;
+	overflow: hidden;
+	font-size: 14px; line-height: 17px;
+	color: #505050;
+}
+
+
+/* ----- TOP FIELDS Styles ----- */
+.allmode-columns .allmode_topitem .allmode_info {								/* TOP Item Info DIV */
+	padding: 6px 12px 4px;
+	line-height: 15px;
+	background-color: #f0f4f6;
+	border-top: 1px solid #e3e7e9;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.allmode-columns .allmode_topitem .allmode_date {								/* TOP Item DATE */
+	margin: 0 4px 3px 0;
+	font-size: 12px; font-weight: bold; font-style: italic;
+	line-height: 20px; text-align: right !important;
+	color: #0a4580;
+}
+.allmode-columns .allmode_topitem .allmode_comments {							/* TOP Item COMMENTS */
+	font-size: 14px; font-weight: normal;
+	color: #505050;
+}
+.allmode-columns .allmode_topitem .allmode_comments a {
+	font-weight: normal;
+}
+
+
+/* ----- ITEMS Styles ----- */
+.allmode-columns .allmode_itemsbox {
+	/*margin: 0 0 2px -32px;														/* Remove unneccessary left margin of the first column (-32px) */
+	padding-bottom: 8px;
+	/*overflow: hidden;*/
+}
+.allmode-columns .allmode_item {
+	float: left;																/* Assign float property */
+	/*margin: 12px 0 0 32px;														/* Column spacing (32px) */
+	width: 256px;																/* Column width (256px) */
+	overflow: hidden;
+}
+.allmode-columns .allmode_item .allmode_title {									/* Item TITLE */
+	/*margin: 5px 0 4px 0;*/ padding: 0 4px;
+	font-size: 13px; font-weight: bold;
+	color: #0a4580;
+}
+.allmode-columns .allmode_item .allmode_title a {
+	/*font-weight: bold;*/
+}
+.allmode-columns .allmode_item .allmode_img {									/* Item IMAGE */
+	float: left;
+	margin: 2px 16px 8px 0;
+	/*border: 3px solid #d5e6f7;*/
+}
+.allmode-columns .allmode_item .allmode_text {									/* Item TEXT */
+	font-size: 13px; line-height: 16px;
+	color: #505050;
+}
+
+
+/* ----- FIELDS Styles ----- */
+.allmode-columns .allmode_item .allmode_info {									/* Item Info DIV */
+	margin-bottom: 8px;
+	padding: 2px 6px;
+	background-color: #f0f4f6;
+}
+.allmode-columns .allmode_item .allmode_comments {								/* Item COMMENTS */
+	font-size: 12px; font-weight: normal;
+	color: #505050;
+}
+.allmode-columns .allmode_item .allmode_comments a {
+	font-weight: normal;
+}
+
+.allmode_img img
+{border-radius: 15px;}
+
+
+h6.allmode_title a{
+	color:#000!important;
+	text-decoration:none!important;
+	font-size:12px!important;
+}
+
+h6.allmode_title a:hover{
+	color:#005b7f!important;
+	text-decoration: underline!important;
+}
